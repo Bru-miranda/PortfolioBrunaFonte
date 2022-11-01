@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="https://kit.fontawesome.com/c832ea68e3.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <title>Portfólio Bruna Fonte</title>
+</head>
+
+<body>
+    <!--Inicio Header-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>I'm <span class="auto-type"></span></h1>
+            </div>
+        </div>
+    </div>
+    <!--Fim Header-->
+
+    <!--Inicio About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title efeito">About <span class="colorido">me</span></h1>
+                    <p class="me">
+                        I’m Bruna. I’m 28 years old and I am living in Porto. 
+                        I am from Brasil but I am living in Portugal for four years. 
+                        When I came to Portugal, I started working in factories. 
+                        I did not like those jobs and wanted to explore other career options. 
+                        Having a design background, I discovered front end development and took a big interest in it. <br>
+                        I decided to join the two fields that interested me and started studying to become a web designer, 
+                        with a focus on front end development. This will allow me to join the creativity of design with the programming of developing and coding.
+                    </p>
+
+                    <div class="tabs-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Course Udemy</li>
+                            <li><span>2022</span><br>Course IEFP</li>
+                            <li><span>2016 (didn't finish)</span><br>College Design and Marketing</li>
+                            <li><span>2014</span><br>Techinical Desing and cultural production</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span></span><br>Ready to start</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-col-1">
+                    <img src="/img/IMG_0438.PNG" onmouseover="this.src='./img/IMG_0439.PNG'" onmouseout="this.src='./img/IMG_0438.PNG' " alt="Photo the user">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fim About-->
+    
+    <!--Inicio Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My <span class="colorido">work</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <a href="https://landing-page-anateresa.netlify.app/" target="_blank">
+                        <img src="img/site_anateresa.png" alt="Page Ana Teresa">
+                    </a>
+                </div>
+                <div class="work">
+                    <div class="layer">
+                        <a href="https://thegallery-art.netlify.app/" target="_blank">
+                            <img src="img/site_thegallery.png" alt="Page The Gallery">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more soon</a>
+        </div>
+    </div>
+    <!--Fim Portfolio-->
+
+    <!--Inicio Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div class="hover_img">
+                    <h1>
+                        Figma
+                        <span>
+                            <img src="./img/figma.PNG" alt="Figma" />
+                        </span>
+                    </h1>
+                </div>
+                <div class="hover_img">
+                    <h1>
+                        Photoshop
+                        <span>
+                            <img src="./img/psd.PNG" alt="Photoshop" />
+                        </span>
+                    </h1>
+                </div>
+                <div class="hover_img">
+                    <h1>
+                        CSS
+                        <span>
+                            <img src="./img/css.PNG" alt="CSS" />
+                        </span>
+                    </h1>
+                </div>
+                <div class="hover_img">
+                    <h1>
+                        JavaScript
+                        <span>
+                            <img src="./img/js.PNG" alt="JavaScript" />
+                        </span>
+                    </h1>
+                </div>
+                <div class="hover_img">
+                    <h1>
+                        Illustrator
+                        <span>
+                            <img src="./img/ai.PNG" alt="Illustrator" />
+                        </span>
+                    </h1>
+                </div>
+                <div class="hover_img">
+                    <h1>
+                        HTML
+                        <span>
+                            <img src="./img/html.PNG" alt="Html" />
+                        </span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fim Services-->
+
+
+    <!--Inicio Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>me</span></h1>
+                    <div class="social-icons">
+                        <a href="https://github.com/Bru-miranda" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/bruna-fonte-b67a2b145/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></i></a>
+                    </div>
+                    <a href="img/CV Bruna Fonte.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Copyright 2022 Bruna Fonte</p>
+        </div>
+    </div>
+    <!--Fim Contact-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/aboutme.js"></script>
+    <script src="/js/sidemenu.js"></script>
+    <script src="/js/form.js"></script>
+</body>
+
+</html>
